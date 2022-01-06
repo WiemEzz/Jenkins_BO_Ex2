@@ -35,7 +35,8 @@ sort idgroup |uniq>idgroupf
 
     stage('stage4') {
       steps {
-        sh 'diff -y -W 50 idgroupf allgroupf>result'
+        sh '''diff -y -W 50 idgroupf allgroupf>result
+echo "resultat dans file result"'''
       }
     }
 
