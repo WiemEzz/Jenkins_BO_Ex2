@@ -35,7 +35,7 @@ sort idgroup |uniq>idgroupf
 
     stage('stage4') {
       steps {
-        sh 'diff idgroupf allgroupf'
+        sh 'diff -a idgroupf allgroupf'
       }
     }
 
